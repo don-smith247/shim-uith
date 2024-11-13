@@ -8,36 +8,51 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+       <link rel="stylesheet" href="./assets/css/styles.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-      <title>Responsive navbar with search and login - Bedimcode</title>
+      <title>uith-shim</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="#" class="nav__logo">Logo</a>
+            <a href="#" class="logo-container">
+               <div class="logo-icon">
+                 <div class="outer-circle"></div>
+                 <div class="data-lines">
+                   <div class="data-line"></div>
+                   <div class="data-line"></div>
+                   <div class="data-line"></div>
+                 </div>
+                 <div class="health-symbol"></div>
+               </div>
+               <div class="logo-text">
+                 <span class="logo-title">U.I.T.H,SHIM.</span>
+                 <span class="logo-subtitle">Health Information Management</span>
+               </div>
+             </a>
 
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#" class="nav__link">Home</a>
+                     <a href="./index.html" class="nav__link">Home</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">About Us</a>
+                     <a href="./about.html" class="nav__link">About Us</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">Services</a>
+                     <a href="./calen.html" class="nav__link">Academic Calendar</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">Featured</a>
+                     <a href="#" class="nav__link">Admission</a>
                   </li>
 
                   <li class="nav__item">
-                     <a href="#" class="nav__link">Contact Me</a>
+                     <a href="./contactus.html" class="nav__link">Contact Us</a>
                   </li>
                </ul>
 
@@ -52,7 +67,7 @@
                <i class="ri-search-line nav__search" id="search-btn"></i>
 
                <!-- Login button -->
-               <i class="ri-user-line nav__login" id="login-btn"></i>
+               
 
                <!-- Toggle button -->
                <div class="nav__toggle" id="nav-toggle">
@@ -61,7 +76,6 @@
             </div>
          </nav>
       </header>
-
       <!--==================== SEARCH ====================-->
       <div class="search" id="search">
          <form action="" class="search__form">
@@ -71,45 +85,147 @@
 
          <i class="ri-close-line search__close" id="search-close"></i>
       </div>
-
-      <!--==================== LOGIN ====================-->
-      <div class="login" id="login">
-         <form action="" class="login__form">
-            <h2 class="login__title">Log In</h2>
-            
-            <div class="login__group">
-               <div>
-                  <label for="email" class="login__label">Email</label>
-                  <input type="email" placeholder="Write your email" id="email" class="login__input">
-               </div>
-               
-               <div>
-                  <label for="password" class="login__label">Password</label>
-                  <input type="password" placeholder="Enter your password" id="password" class="login__input">
-               </div>
-            </div>
-
-            <div>
-               <p class="login__signup">
-                  You do not have an account? <a href="#">Sign up</a>
-               </p>
-   
-               <a href="#" class="login__forgot">
-                  You forgot your password
-               </a>
-   
-               <button type="submit" class="login__button">Log In</button>
-            </div>
-         </form>
-
-         <i class="ri-close-line login__close" id="login-close"></i>
+      <section class="hero">
+         <div class="animated-bg"></div>
+         <div class="particles">
+           <!-- Particles will be added via JavaScript -->
+         </div>
+         <div class="floating-shapes">
+           <div class="shape"></div>
+           <div class="shape"></div>
+           <div class="shape"></div>
+         </div>
+         
+         <div class="content">
+           <h1 class="title">U.I.T.H, School of Health Information Management.</h1>
+           <p class="subtitle">Transform healthcare through <span class="highlight-word">innovation</span> and <span class="highlight-word">technology</span>. Join our premier program to become a leader in digital health transformation and data-driven healthcare solutions.</p>
+           <div class="cta-buttons">
+             <button class="cta-button primary-button">Start Your Journey</button>
+             <button class="cta-button secondary-button">Discover More</button>
+           </div>
+         </div>
+     
+         <div class="scroll-indicator">
+           <span></span>
+         </div>
+       </section>
+       <section class="about-container">
+         <div class="about-content">
+             <div class="about-text">
+                 <h2 class="about-title">About School of HIM</h2>
+                 <p class="about-description">
+                     The School of Health Information Management at UITH is dedicated to nurturing the next generation of healthcare information professionals. With over two decades of excellence, we combine traditional values with modern healthcare technology.
+                 </p>
+                 <div class="about-highlights">
+                     <div class="highlight-item">
+                         <h3>Professional Training</h3>
+                         <p>Accredited program with hands-on experience</p>
+                     </div>
+                     <div class="highlight-item">
+                         <h3>Expert Faculty</h3>
+                         <p>Learn from industry professionals</p>
+                     </div>
+                     <div class="highlight-item">
+                         <h3>Modern Facilities</h3>
+                         <p>State-of-the-art learning environment</p>
+                     </div>
+                     <div class="highlight-item">
+                         <h3>Career Support</h3>
+                         <p>Strong industry connections</p>
+                     </div>
+                 </div>
+                 <a href="#learn-more" class="accent-button">Learn More</a>
+             </div>
+             <div class="about-image">
+                 <img src="./shim.jpg" alt="HIM Students at Work">
+             </div>
+         </div>
+     </section>
+     <section class="health-info-management-programs">
+      <div class="section-header">
+        <h2 class="section-title">U.I.T.H,Health Information Management Programs</h2>
       </div>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <img src="assets/img/bg-image.png" alt="image" class="main__bg">
-      </main>
-      
+    
+      <div class="program-cards">
+        <div class="program-card">
+          <h3 class="program-title">HND Program</h3>
+          <p class="program-description">Our HND (Higher National Diploma) program in Health Information Management provides a comprehensive education in the field of healthcare data management. Students will develop skills in data analysis, health informatics, and medical coding.</p>
+        </div>
+    
+        <div class="program-card">
+          <h3 class="program-title">ND Program</h3>
+          <p class="program-description">The ND (National Diploma) program in Health Information Management offers a practical, hands-on approach to healthcare data management. Students will learn about healthcare administration, medical terminology, and electronic health record systems.</p>
+        </div>
+      </div>
+    </section>
+    <section class="coordinator-section">
+      <div class="coordinator-card">
+        <div class="coordinator-image">
+          <img src="./coordinator.jpg" alt="Coordinator Image" />
+        </div>
+        <div class="coordinator-info">
+          <h2 class="coordinator-name">Mr Ade</h2>
+          <p class="coordinator-title">Program Coordinator, Health Information Management</p>
+          <div class="coordinator-qualifications">
+            <h3>Qualifications</h3>
+            <ul>
+              <li>Doctor of Health Informatics (DHI)</li>
+              <li>Master of Science in Health Information Management</li>
+              <li>Certified Coding Specialist (CCS)</li>
+              <li>Registered Health Information Administrator (RHIA)</li>
+            </ul>
+          </div>
+          <div class="coordinator-bio">
+            <h3>About the Coordinator</h3>
+            <p>MR Ade Wilkins is a passionate and dedicated professional in the field of health information management. With over 15 years of experience, she brings a wealth of knowledge and expertise to her role as the Program Coordinator for the School of Health Information Management.</p>
+            <p>Her strong background in health informatics, medical coding, and healthcare administration has made her an invaluable asset to the program. Mr. Ade is committed to providing students with a comprehensive education that prepares them for success in the ever-evolving healthcare industry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      <footer class="footer">
+         <div class="footer-content">
+             <div class="footer-section">
+                 <h3>About Us</h3>
+                 <p>School of Health Information Management provides cutting-edge education in healthcare informatics and data management, preparing future leaders in healthcare technology.</p>
+             </div>
+ 
+             <div class="footer-section">
+                 <h3>Quick Links</h3>
+                 <ul class="footer-links">
+                     <li><a href="./index.html">Home</a></li>
+                     <li><a href="#">Programs</a></li>
+                     <li><a href="">Admissions</a></li>
+                     <li><a href="./about.html">About Us</a></li>
+                     <li><a href="./calen.html">Academic Calendar</a></li>
+                     <li><a href="#">Student Portal</a></li>
+                     <li><a href="#">Staffs</a></li>
+                     <li><a href="./contactus.html">Contact Us</a></li>
+                 </ul>
+             </div>
+ 
+             <div class="footer-section">
+                 <h3>Contact Info</h3>
+                 <ul class="footer-links">
+                     <li>123 Healthcare Avenue</li>
+                     <li>Medical District, ST 12345</li>
+                     <li>Phone: (123) 456-7890</li>
+                     <li>Email: info@healthschool.edu</li>
+                 </ul>
+                 <div class="social-links">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                 </div>
+             </div>
+         </div>
+ 
+         <div class="footer-bottom">
+             <p>&copy; 2024 School of H.I.M. All rights reserved.</p>
+         </div>
+     </footer>
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
    </body>

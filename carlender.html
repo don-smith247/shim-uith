@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar - SHIM UITH</title>
+    <link rel="stylesheet" href="./assets/css/carlender.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== CSS ===============-->
+       <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: var(--primary-gradient);
+            color: white;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo-container">
+                <div class="logo-icon">
+                  <div class="outer-circle"></div>
+                  <div class="data-lines">
+                    <div class="data-line"></div>
+                    <div class="data-line"></div>
+                    <div class="data-line"></div>
+                  </div>
+                  <div class="health-symbol"></div>
+                </div>
+                <div class="logo-text">
+                  <span class="logo-title">U.I.T.H,SHIM.</span>
+                  <span class="logo-subtitle">Health Information Management</span>
+                </div>
+            </a>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li class="nav__item">
+                    <a href="./index.html" class="nav__link">Home</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./about.html" class="nav__link">About Us</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./carlender.html" class="nav__link">Academic Calendar</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="#" class="nav__link">Admission</a>
+                 </li>
+
+                 <li class="nav__item">
+                    <a href="./contactus.html" class="nav__link">Contact Us</a>
+                 </li>
+              </ul>
+
+              <!-- Close button -->
+              <div class="nav__close" id="nav-close">
+                 <i class="ri-close-line"></i>
+              </div>
+           </div>
+
+           <div class="nav__actions">
+              <!-- Search button -->
+              <i class="ri-search-line nav__search" id="search-btn"></i>
+
+              <!-- Login button -->
+              
+
+              <!-- Toggle button -->
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line"></i>
+              </div>
+           </div>
+        </nav>
+     </header>
+     <div class="search" id="search">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <h1 class="h1">Academic Calendar 2024-2025</h1>
+            <p class="p">School of Health Information Management</p>
+        </div>
+
+        <div class="semester-tabs">
+            <button class="semester-tab active" onclick="showSemester('first')">First Semester</button>
+            <button class="semester-tab" onclick="showSemester('second')">Second Semester</button>
+        </div>
+
+        <div class="semester-content active" id="first">
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-content">
+                        <div class="event-date">September 2, 2024</div>
+                        <h3 class="event-title">Resumption & Registration</h3>
+                        <p class="event-description">Beginning of academic year. Students registration and course enrollment starts.</p>
+                    </div>
+                </div>
+
+                <div class="event right">
+                    <div class="event-content">
+                        <div class="event-date">September 16, 2024</div>
+                        <h3 class="event-title">Lectures Commence</h3>
+                        <p class="event-description">Official start of lectures for all levels.</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-content">
+                        <div class="event-date">November 25-29, 2024</div>
+                        <h3 class="event-title">Mid-Semester Examinations</h3>
+                        <p class="event-description">Mid-semester assessments for all courses.</p>
+                    </div>
+                </div>
+
+                <div class="event right">
+                    <div class="event-content">
+                        <div class="event-date">January 20-31, 2025</div>
+                        <h3 class="event-title">First Semester Examinations</h3>
+                        <p class="event-description">Final examinations for first semester courses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="semester-content" id="second">
+            <div class="timeline">
+                <div class="event">
+                    <div class="event-content">
+                        <div class="event-date">February 17, 2025</div>
+                        <h3 class="event-title">Second Semester Begins</h3>
+                        <p class="event-description">Resumption and start of second semester activities.</p>
+                    </div>
+                </div>
+
+                <div class="event right">
+                    <div class="event-content">
+                        <div class="event-date">April 14-18, 2025</div>
+                        <h3 class="event-title">Mid-Semester Break</h3>
+                        <p class="event-description">Short break and mid-semester assessments.</p>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-content">
+                        <div class="event-date">June 16-27, 2025</div>
+                        <h3 class="event-title">Final Examinations</h3>
+                        <p class="event-description">End of session examinations for all levels.</p>
+                    </div>
+                </div>
+
+                <div class="event right">
+                    <div class="event-content">
+                        <div class="event-date">July 15, 2025</div>
+                        <h3 class="event-title">End of Academic Year</h3>
+                        <p class="event-description">Conclusion of academic activities and result processing begins.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="important-notice">
+            <h3>Important Notice:</h3>
+            <p>All dates are subject to change. Students are advised to regularly check their email and department notice boards for updates.</p>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        function showSemester(semester) {
+          
+            document.querySelectorAll('.semester-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+          
+            document.querySelectorAll('.semester-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+        
+            document.getElementById(semester).classList.add('active');
+           
+            event.target.classList.add('active');
+
+            const events = document.querySelectorAll('.event');
+            events.forEach((event, index) => {
+                event.style.animation = 'none';
+                event.offsetHeight; 
+                event.style.animation = `fadeIn 0.5s ease forwards ${index * 0.2}s`;
+            });
+        }
+    </script>
+    <script src="./assets/js/main.js"></script>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>School of Health Information Management provides cutting-edge education in healthcare informatics and data management, preparing future leaders in healthcare technology.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="">Admissions</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./carlender.html">Academic Calendar</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Staffs</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>123 Healthcare Avenue</li>
+                    <li>Medical District, ST 12345</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: info@healthschool.edu</li>
+                </ul>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 School of H.I.M. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
