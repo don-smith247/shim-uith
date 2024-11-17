@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./assets/css/contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+  <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="./assets/css/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo-container">
+        <div class="logo-icon">
+          <div class="outer-circle"></div>
+          <div class="data-lines">
+            <div class="data-line"></div>
+            <div class="data-line"></div>
+            <div class="data-line"></div>
+          </div>
+          <div class="health-symbol"></div>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">U.I.T.H,SHIM.</span>
+          <span class="logo-subtitle">Health Information Management</span>
+        </div>
+      </a>
+
+       <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+               <a href="./index.html" class="nav__link">Home</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./about.html" class="nav__link">About Us</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./carlender.html" class="nav__link">Academic Calendar</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./admission.html" class="nav__link">Admission</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./staff.html" class="nav__link">Staffs</a>
+            </li>
+         </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+             <i class="ri-close-line"></i>
+          </div>
+       </div>
+
+       <div class="nav__actions">
+          <!-- Search button -->
+          <i class="ri-search-line nav__search" id="search-btn"></i>
+
+          <!-- Login button -->
+          
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line"></i>
+          </div>
+       </div>
+    </nav>
+ </header>
+ <div class="search" id="search">
+    <form action="" class="search__form">
+       <i class="ri-search-line search__icon"></i>
+       <input type="search" placeholder="What are you looking for?" class="search__input">
+    </form>
+
+    <i class="ri-close-line search__close" id="search-close"></i>
+ </div>
+ <div class="containeer">
+  <div class="eader">
+      <h1 class="logo">School of Health Information Management</h1>
+      
+  </div>
+  
+
+  <form class="admission-form">
+      <div class="form-section">
+          <h2 class="section-title">Personal Information</h2>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="firstname">First Name</label>
+                  <input type="text" id="firstname" required>
+              </div>
+              <div class="form-group">
+                  <label for="lastname">Last Name</label>
+                  <input type="text" id="lastname" required>
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" id="dob" required>
+              </div>
+              <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select id="gender" required>
+                      <option value="">Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Prefer not to say</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+
+      <div class="form-section">
+          <h2 class="section-title">Contact Information</h2>
+          <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required>
+          </div>
+          <div class="form-group">
+              <label for="address">Home Address</label>
+              <textarea id="address" rows="2" required></textarea>
+          </div>
+      </div>
+
+      <div class="form-section">
+          <h2 class="section-title">Academic Information</h2>
+          <div class="requirements">
+              <strong>Entry Requirements:</strong>
+              <ul>
+                  <li>Five O'Level Credits in English, Mathematics, Biology/Health Science, and any other two Science subjects</li>
+                  <li>JAMB Score of 180 and above</li>
+              </ul>
+          </div>
+          <div class="form-row">
+              <div class="form-group">
+                  <label for="jamb">JAMB Registration Number</label>
+                  <input type="text" id="jamb" required>
+              </div>
+              <div class="form-group">
+                  <label for="jamb-score">JAMB Score</label>
+                  <input type="number" id="jamb-score" min="0" max="400" required>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="previous-school">Previous School Attended</label>
+              <input type="text" id="previous-school" required>
+          </div>
+      </div>
+
+      <button type="submit">Submit Application</button>
+  </form>
+</div>
+  <script src="./assets/js/main.js"></script>
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>School of Health Information Management provides cutting-edge education in healthcare informatics and data management, preparing future leaders in healthcare technology.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./admission.html">Admissions</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./carlender.html">Academic Calendar</a></li>
+                <li><a href="./staff.html">Staffs</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <ul class="footer-links">
+                <li>UITH, AMILENGBE</li>
+                <li>Phone: (123) 456-7890</li>
+                <li>Email: info@healthschool.edu</li>
+            </ul>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 School of H.I.M. All rights reserved.</p>
+    </div>
+</footer>
+<style>
+   :root {
+            --primary-gradient: linear-gradient(135deg, #1a0b2e 0%, #4b1f5d 50%, #7a2c73 100%);
+            --accent-color: #ff3366;
+            --text-gradient: linear-gradient(to right, #ffffff, #e2c4f6);
+        }
+
+        body {
+            background: var(--primary-gradient);
+            color: white;
+            /* min-height: 100vh; */
+        }
+
+        .containerr {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        .eader {
+            text-align: center;
+            /* padding: 30px 0; */
+            animation: fadeIn 1s ease-in;
+            margin-top: 100px;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            background: var(--text-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #e2c4f6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .admission-form {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            animation: slideUp 1s ease-out;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .requirements {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .requirements ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .requirements li {
+            margin-bottom: 5px;
+        }
+
+        button {
+            background: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+            margin: 30px auto;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 51, 102, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+</style>
+</body>
+</html>

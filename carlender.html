@@ -3,32 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Calendar - SHIM UITH</title>
+    <title>UITH SHIM Academic Calendar</title>
     <link rel="stylesheet" href="./assets/css/carlender.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
-      <!--=============== CSS ===============-->
-       <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background: var(--primary-gradient);
-            color: white;
-            min-height: 100vh;
-            padding: 2rem;
-        }
-
-        
-    </style>
+    <!--=============== CSS ===============-->
+     <link rel="stylesheet" href="./assets/css/styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 <body>
     <header class="header" id="header">
@@ -50,27 +32,27 @@
             </a>
 
            <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Home</a>
-                 </li>
+            <ul class="nav__list">
+                <li class="nav__item">
+                   <a href="./index.html" class="nav__link">Home</a>
+                </li>
 
-                 <li class="nav__item">
-                    <a href="./about.html" class="nav__link">About Us</a>
-                 </li>
+                <li class="nav__item">
+                   <a href="./about.html" class="nav__link">About Us</a>
+                </li>
 
-                 <li class="nav__item">
-                    <a href="./carlender.html" class="nav__link">Academic Calendar</a>
-                 </li>
+                <li class="nav__item">
+                   <a href="./carlender.html" class="nav__link">Academic Calendar</a>
+                </li>
 
-                 <li class="nav__item">
-                    <a href="#" class="nav__link">Admission</a>
-                 </li>
+                <li class="nav__item">
+                   <a href="./admission.html" class="nav__link">Admission</a>
+                </li>
 
-                 <li class="nav__item">
-                    <a href="./contactus.html" class="nav__link">Contact Us</a>
-                 </li>
-              </ul>
+                <li class="nav__item">
+                   <a href="./staff.html" class="nav__link">Staffs</a>
+                </li>
+             </ul>
 
               <!-- Close button -->
               <div class="nav__close" id="nav-close">
@@ -100,122 +82,366 @@
 
         <i class="ri-close-line search__close" id="search-close"></i>
      </div>
-    <div class="calendar-container">
-        <div class="calendar-header">
-            <h1 class="h1">Academic Calendar 2024-2025</h1>
-            <p class="p">School of Health Information Management</p>
+     <div class="containerr">
+        <div class="fff">
+            <h1>SCHOOL OF HEALTH INFORMATION MANAGEMENT</h1>
+            <h2>UNIVERSITY OF ILORIN TEACHING HOSPITAL</h2>
+            <h3>ACADEMIC YEAR PROGRAMME FOR 2023/2024</h3>
         </div>
 
-        <div class="semester-tabs">
-            <button class="semester-tab active" onclick="showSemester('first')">First Semester</button>
-            <button class="semester-tab" onclick="showSemester('second')">Second Semester</button>
+        <div class="semester-buttons">
+            <button class="semester-btn active" onclick="showSection('first')"><span>First Semester</span></button>
+            <button class="semester-btn" onclick="showSection('second')"><span>Second Semester</span></button>
+            <button class="semester-btn" onclick="showSection('activities')"><span>Seminars & Activities</span></button>
         </div>
 
-        <div class="semester-content active" id="first">
-            <div class="timeline">
-                <div class="event">
-                    <div class="event-content">
-                        <div class="event-date">September 2, 2024</div>
-                        <h3 class="event-title">Resumption & Registration</h3>
-                        <p class="event-description">Beginning of academic year. Students registration and course enrollment starts.</p>
-                    </div>
+        <div id="first-semester" class="calendar-section active">
+            <div class="calendar-grid">
+                <div class="calendar-item">
+                    <div class="event-description">Resumption Date</div>
+                    <div class="event-date">09th October, 2023</div>
                 </div>
-
-                <div class="event right">
-                    <div class="event-content">
-                        <div class="event-date">September 16, 2024</div>
-                        <h3 class="event-title">Lectures Commence</h3>
-                        <p class="event-description">Official start of lectures for all levels.</p>
-                    </div>
+                <div class="calendar-item">
+                    <div class="event-description">Commencement of Lecturers (Returning Students)</div>
+                    <div class="event-date">16th October, 2023</div>
                 </div>
-
-                <div class="event">
-                    <div class="event-content">
-                        <div class="event-date">November 25-29, 2024</div>
-                        <h3 class="event-title">Mid-Semester Examinations</h3>
-                        <p class="event-description">Mid-semester assessments for all courses.</p>
-                    </div>
+                <div class="calendar-item">
+                    <div class="event-description">SHIM Orientation (HND I & ND 1)</div>
+                    <div class="event-date">20th - 21st November, 2023</div>
                 </div>
-
-                <div class="event right">
-                    <div class="event-content">
-                        <div class="event-date">January 20-31, 2025</div>
-                        <h3 class="event-title">First Semester Examinations</h3>
-                        <p class="event-description">Final examinations for first semester courses.</p>
-                    </div>
+                <div class="calendar-item">
+                    <div class="event-description">SIWES Presentation (HND II & ND Il)</div>
+                    <div class="event-date">4th - 8th December, 2023</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Christmas / New Year Break</div>
+                    <div class="event-date">18th December, 2023</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Resumption from New Year Break</div>
+                    <div class="event-date">8th January, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Matriculation</div>
+                    <div class="event-date">5th February, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">First Semester Examination (HND II & ND II)</div>
+                    <div class="event-date">1st - 8th March, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">First Semester Examination (HND I & ND I)</div>
+                    <div class="event-date">11th - 18th March, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">First Semester Break</div>
+                    <div class="event-date">20th March, 2024</div>
                 </div>
             </div>
         </div>
 
-        <div class="semester-content" id="second">
-            <div class="timeline">
-                <div class="event">
-                    <div class="event-content">
-                        <div class="event-date">February 17, 2025</div>
-                        <h3 class="event-title">Second Semester Begins</h3>
-                        <p class="event-description">Resumption and start of second semester activities.</p>
-                    </div>
+        <div id="second-semester" class="calendar-section">
+            <div class="calendar-grid">
+                <div class="calendar-item">
+                    <div class="event-description">Resumption for Second Semester</div>
+                    <div class="event-date">15th April, 2024</div>
                 </div>
-
-                <div class="event right">
-                    <div class="event-content">
-                        <div class="event-date">April 14-18, 2025</div>
-                        <h3 class="event-title">Mid-Semester Break</h3>
-                        <p class="event-description">Short break and mid-semester assessments.</p>
-                    </div>
+                <div class="calendar-item">
+                    <div class="event-description">Commencement of Lectures (All Levels)</div>
+                    <div class="event-date">15th April, 2024</div>
                 </div>
-
-                <div class="event">
-                    <div class="event-content">
-                        <div class="event-date">June 16-27, 2025</div>
-                        <h3 class="event-title">Final Examinations</h3>
-                        <p class="event-description">End of session examinations for all levels.</p>
-                    </div>
+                <div class="calendar-item">
+                    <div class="event-description">Submission of Draft Project Work</div>
+                    <div class="event-date">31st MAY, 2024</div>
                 </div>
-
-                <div class="event right">
-                    <div class="event-content">
-                        <div class="event-date">July 15, 2025</div>
-                        <h3 class="event-title">End of Academic Year</h3>
-                        <p class="event-description">Conclusion of academic activities and result processing begins.</p>
-                    </div>
+                <div class="calendar-item">
+                    <div class="event-description">Students Health Week</div>
+                    <div class="event-date">June, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Project Rehearsal (HND II & ND II)</div>
+                    <div class="event-date">1st - 5th July, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Second Semester Examination (HD II & ND II)</div>
+                    <div class="event-date">15th - 19th July, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Second Semester Examination (HND I & ND I)</div>
+                    <div class="event-date">22nd - 29th July, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Final Year Project Defense</div>
+                    <div class="event-date">12th - 16th August, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">SIWES (HND I & ND I) 6 Weeks</div>
+                    <div class="event-date">19th - 28th August, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">SIWES Visitation</div>
+                    <div class="event-date">16th - 20th September, 2024</div>
                 </div>
             </div>
         </div>
 
-        <div class="important-notice">
-            <h3>Important Notice:</h3>
-            <p>All dates are subject to change. Students are advised to regularly check their email and department notice boards for updates.</p>
+        <!-- Seminars and Activities Section -->
+        <div id="activities" class="calendar-section">
+            <div class="section-title">SEMINARS</div>
+            <div class="calendar-grid">
+                <div class="calendar-item">
+                    <div class="event-description">Local Seminar</div>
+                    <div class="event-date">October/November, 2023</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">National - As Determined by HRORBN</div>
+                    <div class="event-date">January/February, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Graduation</div>
+                    <div class="event-date">January, 2024</div>
+                </div>
+            </div>
+
+            <div class="section-title">EXTRA CURRICULAR ACTIVITIES</div>
+            <div class="calendar-grid">
+                <div class="calendar-item">
+                    <div class="event-description">Admission Processing JAMB NDI</div>
+                    <div class="event-date">February, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">JAMB Regularization for HND I / TECHNICALS</div>
+                    <div class="event-date">As Determined by Board</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Verification of Level Results</div>
+                    <div class="event-date">November/December, 2023</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Indexing of HND I & ND I (BOARD)</div>
+                    <div class="event-date">January/February, 2024</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">NYSC / Registration / Mobilization</div>
+                    <div class="event-date">As Determined by NYSC</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Registration for Professional Examination</div>
+                    <div class="event-date">As Determined by Board</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Board Resit / Registration</div>
+                    <div class="event-date">November/December, 2023</div>
+                </div>
+                <div class="calendar-item">
+                    <div class="event-description">Resit Examination</div>
+                    <div class="event-date">January/February, 2024</div>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="./assets/js/main.js"></script>
 
     <script>
-        function showSemester(semester) {
-          
-            document.querySelectorAll('.semester-content').forEach(content => {
-                content.classList.remove('active');
+        function showSection(section) {
+            
+            document.querySelectorAll('.calendar-section').forEach(section => {
+                section.classList.remove('active');
             });
             
-          
-            document.querySelectorAll('.semester-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
             
-        
-            document.getElementById(semester).classList.add('active');
+            document.getElementById(section + (section === 'activities' ? '' : '-semester')).classList.add('active');
            
-            event.target.classList.add('active');
-
-            const events = document.querySelectorAll('.event');
-            events.forEach((event, index) => {
-                event.style.animation = 'none';
-                event.offsetHeight; 
-                event.style.animation = `fadeIn 0.5s ease forwards ${index * 0.2}s`;
+            document.querySelectorAll('.semester-btn').forEach(btn => {
+                btn.classList.remove('active');
             });
+            event.currentTarget.classList.add('active');
         }
     </script>
-    <script src="./assets/js/main.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+        :root {
+             --primary-gradient: linear-gradient(135deg, #1a0b2e 0%, #4b1f5d 50%, #7a2c73 100%);
+             --accent-color: #ff3366;
+             --text-gradient: linear-gradient(to right, #ffffff, #e2c4f6);
+         }
+ 
+         * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             font-family: 'Arial', sans-serif;
+         }
+ 
+         body {
+             background: var(--primary-gradient);
+             color: white;
+             /* min-height: 100vh;
+             padding: 2rem; */
+         }
+ 
+         .containerr {
+             max-width: 1100px;
+             margin: 0 auto;
+             animation: fadeIn 1s ease-in;
+         }
+ 
+         .fff {
+             text-align: center;
+             margin-bottom: 2rem;
+             padding-top: 7rem;
+             border-bottom: 2px solid var(--accent-color);
+             animation: slideDown 1s ease-out;
+
+         }
+ 
+         h1, h2, h3 {
+             background: var(--text-gradient);
+             -webkit-background-clip: text;
+             background-clip: text;
+             color: transparent;
+             margin-bottom: 1rem;
+         }
+ 
+         h1 { font-size: 2rem; }
+         h2 { font-size: 1.5rem; }
+         h3 { font-size: 1.2rem; }
+ 
+         .semester-buttons {
+             display: flex;
+             justify-content: center;
+             gap: 1rem;
+             margin-bottom: 2rem;
+             flex-wrap: wrap;
+         }
+ 
+         .semester-btn {
+             padding: 1rem 2rem;
+             font-size: 1.1rem;
+             border: none;
+             border-radius: 25px;
+             cursor: pointer;
+             background: rgba(255, 255, 255, 0.1);
+             color: white;
+             transition: all 0.3s ease;
+             position: relative;
+             overflow: hidden;
+             min-width: 200px;
+         }
+ 
+         .semester-btn::before {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: -100%;
+             width: 100%;
+             height: 100%;
+             background: var(--accent-color);
+             transition: all 0.3s ease;
+             z-index: 1;
+         }
+ 
+         .semester-btn:hover::before {
+             left: 0;
+         }
+ 
+         .semester-btn span {
+             position: relative;
+             z-index: 2;
+         }
+ 
+         .semester-btn.active {
+             background: var(--accent-color);
+             transform: scale(1.05);
+         }
+ 
+         .calendar-section {
+             display: none;
+             opacity: 0;
+             transition: opacity 0.5s ease;
+         }
+ 
+         .calendar-section.active {
+             display: block;
+             opacity: 1;
+         }
+ 
+         .section-title {
+             color: var(--accent-color);
+             margin: 2rem 0 1rem;
+             font-size: 1.3rem;
+             border-bottom: 2px solid var(--accent-color);
+             padding-bottom: 0.5rem;
+         }
+ 
+         .calendar-grid {
+             display: grid;
+             gap: 1rem;
+             animation: fadeIn 1.5s ease-in;
+         }
+ 
+         .calendar-item {
+             background: rgba(255, 255, 255, 0.1);
+             padding: 1.5rem;
+             border-radius: 10px;
+             display: grid;
+             grid-template-columns: 2fr 1fr;
+             align-items: center;
+             transition: transform 0.3s ease, background-color 0.3s ease;
+             animation: slideIn 0.5s ease-out;
+         }
+ 
+         .calendar-item:hover {
+             transform: translateX(10px);
+             background: rgba(255, 255, 255, 0.2);
+             border-left: 4px solid var(--accent-color);
+         }
+ 
+         .event-description {
+             font-size: 1rem;
+         }
+ 
+         .event-date {
+             text-align: right;
+             color: var(--accent-color);
+             font-weight: bold;
+         }
+ 
+         @keyframes fadeIn {
+             from { opacity: 0; }
+             to { opacity: 1; }
+         }
+ 
+         @keyframes slideDown {
+             from { transform: translateY(-50px); opacity: 0; }
+             to { transform: translateY(0); opacity: 1; }
+         }
+ 
+         @keyframes slideIn {
+             from { transform: translateX(-50px); opacity: 0; }
+             to { transform: translateX(0); opacity: 1; }
+         }
+ 
+         @media (max-width: 768px) {
+             .calendar-item {
+                 grid-template-columns: 1fr;
+                 gap: 1rem;
+             }
+ 
+             .event-date {
+                 text-align: left;
+             }
+ 
+             .semester-buttons {
+                 flex-direction: column;
+                 align-items: center;
+             }
+ 
+             .semester-btn {
+                 width: 100%;
+                 max-width: 300px;
+             }
+         }
+     </style>
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -227,21 +453,17 @@
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Programs</a></li>
-                    <li><a href="">Admissions</a></li>
+                    <li><a href="./admission.html">Admissions</a></li>
                     <li><a href="./about.html">About Us</a></li>
                     <li><a href="./carlender.html">Academic Calendar</a></li>
-                    <li><a href="#">Student Portal</a></li>
-                    <li><a href="#">Staffs</a></li>
-                    <li><a href="./contactus.html">Contact Us</a></li>
+                    <li><a href="./staff.html">Staffs</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <ul class="footer-links">
-                    <li>123 Healthcare Avenue</li>
-                    <li>Medical District, ST 12345</li>
+                    <li>UITH, AMILENGBE</li>
                     <li>Phone: (123) 456-7890</li>
                     <li>Email: info@healthschool.edu</li>
                 </ul>
@@ -258,5 +480,22 @@
             <p>&copy; 2024 School of H.I.M. All rights reserved.</p>
         </div>
     </footer>
+    
+   <script src="./assets/js/main.js"></script>
+    <script>
+        function showSemester(semester) {
+            
+            document.querySelectorAll('.calendar-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            document.getElementById(semester + '-semester').classList.add('active');
+     
+            document.querySelectorAll('.semester-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>
